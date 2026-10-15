@@ -1,1 +1,13 @@
-/*    /index.html   200
+# Legacy extensionless and ".html" URLs are owned by the SPA router.
+# Force these to the app shell so a stray static .html file can never redirect to itself.
+/skills          /index.html   200!
+/skills.html     /index.html   200!
+/contact         /index.html   200!
+/contact.html    /index.html   200!
+/minecraft       /index.html   200!
+/minecraft.html  /index.html   200!
+/admin           /index.html   200!
+/admin.html      /index.html   200!
+
+# SPA fallback for every other route.
+/*               /index.html   200
