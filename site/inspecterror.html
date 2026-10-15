@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Page unavailable | Nicolae Blackfang</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    .inspect-error { min-height:100svh; display:grid; place-items:center; padding:32px 0; position:relative; isolation:isolate; }
+    .inspect-error::before { content:""; position:absolute; inset:0; z-index:-1; background:radial-gradient(ellipse at 18% 24%,rgba(226,220,255,.14),transparent 36%),radial-gradient(ellipse at 82% 75%,rgba(255,49,93,.16),transparent 36%); }
+    .inspect-card { width:min(680px,100%); padding:clamp(28px,7vw,64px); text-align:center; border:1px solid rgba(190,164,255,.3); border-radius:32px; background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025)); box-shadow:0 28px 100px rgba(0,0,0,.36),0 0 70px rgba(129,82,255,.1); backdrop-filter:blur(14px); }
+    .inspect-sigil { width:70px;height:70px;display:grid;place-items:center;margin:0 auto 24px;border-radius:24px;color:#17111f;background:linear-gradient(135deg,#fff 0 47%,#ff496e 53%);font-size:2rem;box-shadow:0 0 36px rgba(179,143,255,.28);animation:sigilFloat 3.2s ease-in-out infinite; }
+    .inspect-card h1 { font-size:clamp(2.5rem,8vw,5rem); letter-spacing:-.07em; margin:14px 0; line-height:.95; }
+    .inspect-card p { max-width:480px; margin:0 auto 26px; color:var(--muted); }
+    @keyframes sigilFloat { 50% { transform:translateY(-6px) rotate(5deg); } }
+    @media(prefers-reduced-motion:reduce) { .inspect-sigil { animation:none; } }
+  </style>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+</head>
+<body>
+  <main class="inspect-error">
+    <section class="inspect-card" aria-labelledby="error-title">
+      <div class="inspect-sigil" aria-hidden="true">✦</div>
+      <span class="kicker">A quiet boundary</span>
+      <h1 id="error-title">This page<br>is unavailable.</h1>
+      <p>That shortcut isn’t available here. You can return to the portfolio and continue exploring.</p>
+      <a class="btn primary" href="index.html">Return to home <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+</body>
+</html>

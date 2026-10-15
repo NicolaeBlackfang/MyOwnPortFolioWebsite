@@ -1,0 +1,14 @@
+import { Link } from 'react-router-dom';
+
+export default function HomePage() {
+  return <>
+    <section className="hero">
+      <div className="hero-inner">
+        <div className="hero-side light reveal"><span className="kicker">The Angel Side</span><h1>Build clean.<br />Think bright.</h1><p className="lead">I’m Nicolae Blackfang — a Vibe Coder and engineering enthusiast who enjoys turning ideas into useful, expressive digital experiences.</p><div className="cta-row"><Link className="btn primary" to="/contact">Contact <span aria-hidden="true">↗</span></Link><Link className="btn secondary" to="/skills">Explore Skills <span aria-hidden="true">↗</span></Link></div></div>
+        <div className="hero-side dark reveal"><span className="kicker">The Devil Side</span><h2><span data-typewriter className="typewriter" /></h2><p className="lead">Curious about systems, code, Minecraft, AI-assisted workflows and the messy debugging that turns prototypes into something real.</p><div className="cta-row"><Link className="btn devil" to="/minecraft">Explore Minecraft <span aria-hidden="true">↗</span></Link></div></div>
+      </div>
+    </section>
+    <section className="section"><div className="container"><div className="section-head reveal"><div><span className="kicker">01 / About</span><h2>Creative engineering<br />without the boring edges.</h2></div><p className="lead">A portfolio built around experimentation, practical learning and controlled chaos.</p></div><div className="split-panel reveal"><div className="angel"><span className="kicker">Angel</span><h3>Clarity, structure, usability.</h3><p>Semantic interfaces, responsive layouts, readable code and experiences that feel intentional on phones, tablets and desktops.</p></div><div className="devil"><span className="kicker">Devil</span><h3>Experimentation, systems, edge cases.</h3><p>Debugging, backend logic, AI-assisted scripts and ambitious Minecraft ideas — with Nicolae keeping the final decisions and controls in human hands.</p></div></div></div></section>
+    <section className="section alt"><div className="container grid grid-3"><article className="card reveal" data-tilt><div className="card-icon">⚡</div><h3>Vibe Coding</h3><p className="muted">Rapidly turning concepts into functional prototypes, then refining the rough edges.</p></article><article className="card reveal" data-tilt><div className="card-icon">⌘</div><h3>Engineering Mindset</h3><p className="muted">Breaking problems into systems, testing assumptions and learning through iteration.</p></article><article className="card reveal" data-tilt><div className="card-icon">◇</div><h3>AI-Assisted Craft</h3><p className="muted">Using AI to accelerate scripts and ideas while debugging, reviewing and controlling the final implementation.</p></article></div></section>
+  </>;
+}

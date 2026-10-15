@@ -1,0 +1,9 @@
+const topics = [
+  ['▦', 'Custom Servers', 'Gameplay concepts, server-side systems, configurations and custom experiences designed around a specific community or idea.', ['Server Design', 'Systems']],
+  ['⚙', 'Mods & Scripts', 'Minecraft modifications and scripts where AI can accelerate drafting, while Nicolae remains responsible for testing, debugging and final control.', ['AI-Assisted', 'Debugging']],
+  ['✦', 'Resource Packs', 'Custom-designed visual assets and resource-pack concepts that give a server its own atmosphere and identity.', ['Visual Design', 'Branding']],
+];
+
+export default function MinecraftPage() {
+  return <><section className="section"><div className="container"><div className="section-head reveal"><div><span className="kicker">03 / Minecraft Lab</span><h2>Block worlds.<br />Custom systems.</h2></div><p className="lead">A dedicated space for server concepts, mods, resource packs and experimental game systems.</p></div><div className="grid grid-3">{topics.map(([icon, title, text, tags]) => <article className="card reveal" data-tilt key={title}><div className="card-icon">{icon}</div><h3>{title}</h3><p className="muted">{text}</p><div className="tags">{tags.map(tag => <span className="tag" key={tag}>{tag}</span>)}</div></article>)}</div><div className="notice reveal" style={{ marginTop: 20 }}>AI-assisted code is treated as a development aid, not an authority: generated scripts are reviewed, debugged and controlled by Nicolae before being used.</div></div></section><section className="section alt"><div className="container"><div className="card reveal"><span className="kicker">Build philosophy</span><h2>Prototype → test → debug → refine.</h2><p className="lead">The goal is not simply to make something work once. It is to understand the system well enough to change it safely and deliberately.</p></div></div></section></>;
+}
